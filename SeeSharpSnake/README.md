@@ -1,5 +1,9 @@
 # A self-contained C# game in 8 kB
 
+# FEDE BORRA ESTE RADME.md, LO DEJE PARA QUE LEAS DE DONDE SAQUE ESTA FUENTE Y SEPAS QUE FUE LO QUE SE HIZO AQUI
+
+# ESTO NO LO ENTREGUE HDP!!!
+
 This repo is a complement to my [article on building an 8 kB self-contained game in C#](https://medium.com/@MStrehovsky/building-a-self-contained-game-in-c-under-8-kilobytes-74c3cf60ea04?sk=334b06f72dad47f15d0ba0cc6a502487). By self-contained I mean _this 8 kB C# game binary doesn't need a .NET runtime to work_. See the article on how that's done.
 
 The project files and scripts in this repo build the same game (Snake clone) in several different configurations, each with a different size of the output.
@@ -76,15 +80,16 @@ link.exe /debug:full /subsystem:console zerosnake.obj /entry:__managed__Main ker
 ```
 
 ## Contributing
+
 Contributions are welcome, but I would like to keep the game simple and small. If you would like to add features like levels or achievements, you might want to just fork this repo.
 
 In general, I welcome:
 
-* Making the 8 kB version of the game run on Linux and macOS (the bigger versions of the game should work just fine on Unixes, but the tiny version that p/invokes into the platform APIs is OS specific)
-* Adding a configuration that builds the game as an [EFI boot application](https://github.com/MichalStrehovsky/zerosharp/tree/master/efi-no-runtime) so that it can run without an OS
-* Bug fixes
-* Making the CSPROJ also handle the 8 kB case so that we don't need to mess with the command prompt
-* Small experience improvements (e.g. handling ESC key to exit the game)
+- Making the 8 kB version of the game run on Linux and macOS (the bigger versions of the game should work just fine on Unixes, but the tiny version that p/invokes into the platform APIs is OS specific)
+- Adding a configuration that builds the game as an [EFI boot application](https://github.com/MichalStrehovsky/zerosharp/tree/master/efi-no-runtime) so that it can run without an OS
+- Bug fixes
+- Making the CSPROJ also handle the 8 kB case so that we don't need to mess with the command prompt
+- Small experience improvements (e.g. handling ESC key to exit the game)
 
 ## To build for DOS
 
