@@ -2,6 +2,7 @@
 
 unsafe struct FrameBuffer
 {
+    // Clase del plano del juego
     public const int Width = 40;
     public const int Height = 20;
     public const int Area = Width * Height;
@@ -21,6 +22,7 @@ unsafe struct FrameBuffer
 
     public readonly void Render()
     {
+        // Impresion del jugador y comida de la serpiente
         const ConsoleColor snakeColor = ConsoleColor.Green;
 
         Console.ForegroundColor = snakeColor;
