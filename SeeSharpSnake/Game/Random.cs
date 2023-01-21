@@ -2,6 +2,7 @@
 {
     private uint _val;
 
+    // Generador de posicion aleatoria
     public Random(uint seed)
     {
         _val = seed;
